@@ -33,17 +33,7 @@ Rails.application.configure do
   # Needed for devise auth. In production :host should be set to the actual host of your app
   config.action_mailer.default_url_options = { host: 'localhost',port: 3000}
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  ActionMailer::Base.smtp_settings = {
-      :user_name => 'apikey',
-      :password => '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',
-      :address => 'smtp.sendgrid.net',
-      :domain => 'yourdomain.com',
-      :port => 25587,
-      :authentication => :plain,
-      :enable_starttls_auto => true
-  }
+
 
 
   # Don't care if the mailer can't send.

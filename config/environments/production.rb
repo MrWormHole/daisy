@@ -65,6 +65,20 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.default_url_options = { host: 'https://secure-ravine-42401.herokuapp.com/',port: 3000}
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  ActionMailer::Base.smtp_settings = {
+      :user_name => 'apikey',
+      :password => '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',
+      :address => 'smtp.sendgrid.net',
+      :domain => 'https://secure-ravine-42401.herokuapp.com/',
+      :port => 25587,
+      :authentication => :plain,
+      :enable_starttls_auto => true
+  }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
