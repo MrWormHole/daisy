@@ -4,10 +4,12 @@
     <data-source name="Rails VertigoFileHosting: production" uuid="dee0e0ac-1ccc-4413-be13-56f920449601">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <user-name>VertigoFileHosting</user-name>
+      <schema-mapping />
     </data-source>
     <data-source name="Rails VertigoFileHosting: test" uuid="d4387d12-b1e4-4e43-913b-bb6b32b15d60">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <user-name>rails_user</user-name>
+      <schema-mapping />
     </data-source>
     <data-source name="Rails VertigoFileHosting: development" uuid="92877f7a-7c8c-439b-b16f-2c13082b5a98">
       <database-info product="MySQL" version="8.0.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="8.0.16">
@@ -16,7 +18,11 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <user-name>rails_user</user-name>
-      <introspection-schemas>*:@</introspection-schemas>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>

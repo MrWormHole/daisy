@@ -1,0 +1,11 @@
+<div class="posts edit">
+  <h2> Edit Post </h2>
+
+  <%= form_for(@post,:url => post_path(@post),:method => 'patch') do |f| %>
+    <%= render(:partial => 'posts/shared/form',:locals => {:f => f}) %>
+
+    <div class="form-buttons">
+      <%= f.submit("Edit Post",{:class => 'btn btn-secondary'}) %>
+    </div>
+  <% end %>
+</div>

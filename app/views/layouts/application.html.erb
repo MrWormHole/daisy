@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VertigoFileHosting</title>
+    <title>Daisy</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,9 +10,97 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-  <%= yield %>
+    <!--Main Navigation-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#D980FA;">
+        <img src="/assets/daisy-40.png" />
+        <a class="navbar-brand" href="/"><strong>&nbsp;Daisy Business</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Opinions</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+            <!--
+            <li class="nav-item">
+              <a class="nav-link">FACEBOOK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">TWITTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            -->
+          </ul>
+
+        </div>
+          <% if user_signed_in? %>
+          <div class="dropdown">
+            <button type="button" class="btn btn-outline-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </button>
+            <div class="dropdown-menu dropdown-menu-left"  aria-labelledby="dropdownMenuButton" style="background-color:#D980FA;min-width: 100%" >
+              <a class="dropdown-item" style="color:#FFC312;font-weight:500" href="#">Action</a>
+              <a class="dropdown-item" style="color:#FFC312;font-weight:500" href="#">Another action</a>
+              <a class="dropdown-item" style="color:#FFC312;font-weight:500" href="#">Something else</a>
+            </div>
+          </div>
+            <button type="button" class="btn btn-outline-light">
+              <a href="/users/sign_out" style="color:#f8f9fa;text-decoration:none" >
+                Logout
+              </a>
+            </button>
+          <% else %>
+            <button type="button" class="btn btn-outline-light">
+              <a href="/users/sign_in" style="color:#f8f9fa;text-decoration:none" >
+                Login
+              </a>
+            </button>
+        <% end %>
+      </nav>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Notifications-->
+    <% if flash[:notice] %>
+      <div class="alert alert-success" role="alert">
+        <%=flash[:notice] %>
+      </div>
+    <% elsif flash[:alert]%>
+      <div class="alert alert-danger" role="alert">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
+    <!--Notifications-->
+
+    <%= yield %>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small fixed-bottom" style="background-color:#FDA7DF">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="font-size: small">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/" style="color:#FFC312">Something.com</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
   </body>
 </html>
