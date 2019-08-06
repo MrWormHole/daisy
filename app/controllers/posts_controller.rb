@@ -24,10 +24,9 @@ class PostsController < ApplicationController
 
     if @post.save
       flash[:notice] = "Success! Post created"
-      redirect_to :controller => 'public', :action => 'home'
+      redirect_to @post
     else
       render('new')
-      #redirect_to '/posts/new'
     end
   end
 
