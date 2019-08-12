@@ -7,6 +7,12 @@
       <td><%= @post.header %></td>
     </tr>
     <tr>
+      <th> Image </th>
+      <% @post.images.each do |image| %>
+        <td><%= image_tag image,:style => "width:400px;height:400px" %></td>
+       <%end %>
+    </tr>
+    <tr>
       <th>Content</th>
       <td><%= @post.content %></td>
     </tr>
