@@ -5,7 +5,8 @@
   </tr>
   <tr>
     <th>Images</th>
-    <td><%=f.file_field(:images,multiple:true) %></td>
+    <td><%=f.file_field(:images,multiple:true,accept:'image/*') %>
+      <!-- <%=f.drag_and_drop_file_field :images %> --></td>
   </tr>
   <tr>
     <th>Content</th>

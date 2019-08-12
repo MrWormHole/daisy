@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.6'
 # Use ActiveStorage variant
 gem 'azure-storage', require: false
+gem 'active_storage_drag_and_drop', '~> 1.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

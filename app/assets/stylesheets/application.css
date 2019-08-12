@@ -13,6 +13,7 @@
  *= require font-awesome
  *= require bootstrap
  *= require mdb
+ *= require active_storage_drag_and_drop
  *= require_tree .
  *= require_self
  */
