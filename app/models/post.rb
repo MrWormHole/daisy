@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   belongs_to :user
+  has_many_attached :images
 
   phone_number_regex = /^05\d{2}\d{3}\d{4}/m
   validates_presence_of :header, :message => "Yohooo"

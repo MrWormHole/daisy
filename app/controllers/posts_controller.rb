@@ -74,7 +74,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:header,:content,:name,:location,:phone_number)
+    params.require(:post).permit(:header,:content,:name,:location,:phone_number, images: [])
   end
 
   def prevent_user_forgery
