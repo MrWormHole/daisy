@@ -1,9 +1,12 @@
+<meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
 </br>
-<!-- 30 posts 30 / 4 = 7 30 % 4 = 2 -->
+<!-- 14 posts 14 / 3 = 4 14 % 3 = 2 -->
+<!-- we need to shuffle post position -->
+<!-- we will need to adjust thumbnail as well as link_to the post -->
 <% 0..4.times do %>
   <div class="row" style="grid-row-gap: 50px">
-    <% 0..4.times do %>
-      <div class="col-sm-3">
+    <% 0..3.times do %>
+      <div class="col-sm-4">
         <div class="card card-image" style="background-image: url(/assets/123.jpg);background-size:cover" >
           <p class="card-title text-center amy-crisp-gradient" style="font-size: 40px"> Card title</p>
           <img src="/assets/daisy-160.png" class="card-img-top"  style="visibility: hidden " alt="...">

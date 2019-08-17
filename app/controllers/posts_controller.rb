@@ -87,6 +87,7 @@ class PostsController < ApplicationController
     end
   end
 
+  # total visitor count. We need daily count as well
   def inc_visitor_count
     @post = Post.find(params[:id])
 

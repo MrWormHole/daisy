@@ -3,9 +3,9 @@
 <div class="posts new">
   <h2> New Post</h2>
 
-  <!-- form_for(@post,:url => posts_path,:method => 'post') -->
-  <%= form_with model:@post,url:posts_path do |f| %>
+  <%= form_for(@post,:url => posts_path,:method => 'post') do |f| %>
     <%= render(:partial => 'posts/shared/form',:locals => {:f => f}) %>
+    <%= render(:partial => 'posts/shared/upload',:locals => {:f =>f}) %>
     <div class="form-buttons">
       <%= f.submit("New Post",{:class => 'btn btn-secondary'}) %>
     </div>

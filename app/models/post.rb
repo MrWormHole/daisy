@@ -11,6 +11,7 @@ class Post < ApplicationRecord
   validates_presence_of :phone_number, :message => "Yohooo"
 
   validate :is_image
+  validate :image_limit
   validates_length_of :header,:maximum => 64, :message => "Kohooo"
   validates_length_of :content,:maximum => 512, :message => "Kohooo"
   validates_length_of :name,:maximum => 21, :message => "Kohooo"
@@ -33,6 +34,17 @@ class Post < ApplicationRecord
         image.purge
       end
     end
+  end
+
+  def image_limit
+    if images.size > 6
+      errors.add(:images,"Max image limit is 5")
+      images.each do |image|
+        image.purge
+      end
+    #elsif images.size == 0
+    #  errors.add(:images,"no image found")
+    #end
   end
 
 end
