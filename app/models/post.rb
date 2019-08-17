@@ -44,7 +44,7 @@ class Post < ApplicationRecord
       end
     #elsif images.size == 0
     #  errors.add(:images,"no image found")
-    #end
+    end
   end
 
 end
