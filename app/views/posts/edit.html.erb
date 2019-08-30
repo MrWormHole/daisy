@@ -1,6 +1,6 @@
 <div class="posts edit">
-  <h2> Edit Post </h2>
-
+  <div class="col-md-4"> <h1> Edit Post</h1> </div>
+  </br>
   <%= form_for(@post,:url => post_path(@post),:method => 'patch') do |f| %>
     <%= render(:partial => 'posts/shared/form',:locals => {:f => f}) %>
 

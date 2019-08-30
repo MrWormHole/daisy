@@ -1,9 +1,13 @@
 <div class="posts delete">
-  <h2> Delete Post</h2>
-
+  <div class="col-md-4"> <h1> Delete Post</h1> </div>
+  </br>
   <%= form_for(@post,:url => post_path(@post), :method => 'delete') do |f| %>
-    <p> Are you sure you want to permanently delete this post?</p>
-    <p class="reference-name"><%=f.object.header%></p>
+    <div class="form-group col-md-4">
+      <div style="font-family:'Roboto';font-size:20px">
+        <p> Are you sure you want to permanently delete this post?</p>
+        <p class="reference-name"> <%=f.object.header%></p>
+      </div>
+    </div>
 
     <div class="form-buttons">
       <%=f.submit("Delete Post",{:class => 'btn btn-secondary'})%>

@@ -1,33 +1,29 @@
 <div class="posts index">
-  <h2>Posts</h2>
+  <div class="col-md-4"><h1>All Posts</h1></div>
 
   <table class="table table-info">
     <tr>
       <th scope="col">Header</th>
-      <th scope="col">Content</th>
       <th scope="col">Name</th>
       <th scope="col">Location</th>
       <th scope="col">Phone Number</th>
-      <th scope="col">Position</th>
       <th scope="col">Visible</th>
       <th scope="col">Visitor Count</th>
       <th scope="col">Created At</th>
-      <th scope="col">Updated At</th>
-      <th scope="col">Actions [BUTTONS TO DO SOMETHING]</th>
+      <th scope="col"></th>
     </tr>
     <% @my_posts.each do |p| %>
       <tr>
         <td><%=p.header %></td>
-        <td><%=p.content %></td>
         <td><%=p.name %></td>
         <td><%=p.location %></td>
         <td><%=p.phone_number %></td>
-        <td><%=p.position %></td>
         <td><%=p.visible %></td>
         <td><%=p.visitor_count %></td>
         <td><%=p.created_at %></td>
-        <td><%=p.updated_at %></td>
-
+        <td><%= link_to("View", post_path(p), :class => 'btn btn-secondary') %>
+            <%= link_to("Edit", edit_post_path(p), :class => 'btn btn-secondary') %>
+            <%= link_to("Delete", delete_post_path(p), :class => 'btn btn-secondary') %></td>
       </tr>
     <% end %>
   </table>

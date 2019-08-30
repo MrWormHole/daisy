@@ -1,7 +1,5 @@
-</br>
-<div class="upload">
-  <p> Images </p>
-  <% for i in 0...5 %>
-    <%=f.file_field :images,label:"content:select boobs",multiple:true %>
-  <% end %>
+<div class="form-group col-md-4">
+  <div style="font-family:'Roboto';font-size:20px"> <%= f.label :images %> </div>
+  <div class="form-control"> <%= f.file_field :images,multiple:true %></div>
 </div>
+

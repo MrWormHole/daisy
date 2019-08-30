@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d174b75e-872b-4cdd-b67f-899030291be8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/posts..coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/posts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/delete.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/delete.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/shared/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/shared/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/shared/_upload.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/shared/_upload.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/public/home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/public/home.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,11 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Toshiba\Desktop\rails\daisy\app\assets\javascripts" />
       <recent name="C:\Users\Toshiba\Desktop\rails\VertigoFileHosting\app\assets\images" />
       <recent name="C:\Users\Toshiba\Desktop\rails\VertigoFileHosting\app\views\posts" />
       <recent name="C:\Users\Toshiba\Desktop\rails\VertigoFileHosting\app\views\post\shared" />
       <recent name="C:\Users\Toshiba\Desktop\rails\VertigoFileHosting\app\assets\stylesheets" />
-      <recent name="C:\Users\Toshiba\Desktop\rails\VertigoFileHosting\app\assets\javascripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -127,7 +147,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -156,7 +176,12 @@
       <workItem from="1565798671248" duration="504000" />
       <workItem from="1565814106685" duration="8609000" />
       <workItem from="1565878586245" duration="600000" />
-      <workItem from="1565971781909" duration="8667000" />
+      <workItem from="1565971781909" duration="8821000" />
+      <workItem from="1566143230861" duration="5424000" />
+      <workItem from="1566771435094" duration="136000" />
+      <workItem from="1566772212787" duration="32000" />
+      <workItem from="1566842498027" duration="16000" />
+      <workItem from="1567152535626" duration="9623000" />
     </task>
     <servers />
   </component>
