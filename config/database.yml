@@ -51,4 +51,4 @@ production:
   <<: *default
   database: sq36bjsql7y5iptr
   username: vzpgfoarzkuhoiwv
-  password: <%= ENV['VERTIGOFILEHOSTING_DATABASE_PASSWORD'] %>
+  password: unxsv5mo4ap4hdup
