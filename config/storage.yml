@@ -24,8 +24,8 @@ local:
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 microsoft:
    service: AzureStorage
-   storage_account_name: daisybucket
-   storage_access_key: Gf6q6jgU1ut1LmYFPTqEbJAs88O8Oo4nhQK8N8zay7SBtS9qqUbWWZtteCg5NUA934FFklFm8DYE0pFhC8yvog==
+   storage_account_name: <%= ENV['AZURE_NAME'] %>
+   storage_access_key: <%= ENV['AZURE_KEY'] %>
    container: daisy-container
 
 # storage_access_key: <%= Rails.application.credentials.dig(:azure_storage, :storage_access_key) %>
