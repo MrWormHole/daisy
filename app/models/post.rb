@@ -9,16 +9,17 @@ class Post < ApplicationRecord
   validates_presence_of :name
   validates_presence_of :location
   validates_presence_of :phone_number
+  validates_presence_of :images
 
   validate :is_image
   validate :image_limit
-  validates_length_of :header,:maximum => 64, :message => "Kohooo"
-  validates_length_of :content,:maximum => 512, :message => "Kohooo"
-  validates_length_of :name,:maximum => 21, :message => "Kohooo"
-  validates_length_of :location,:maximum => 21, :message => "Kohooo"
-  validates_length_of :phone_number, :maximum => 12, :message => "Kohooo"
-  validates_format_of :phone_number, :with => PHONE_NUMBER_REGEX, :multiline => true, :message => "Lohooo"
-  validates_uniqueness_of :phone_number, :message => "Johooo"
+  validates_length_of :header,:maximum => 64
+  validates_length_of :content,:maximum => 512
+  validates_length_of :name,:maximum => 21
+  validates_length_of :location,:maximum => 21
+  validates_length_of :phone_number, :maximum => 12
+  validates_format_of :phone_number, :with => PHONE_NUMBER_REGEX, :multiline => true
+  validates_uniqueness_of :phone_number
 
   scope :visible, lambda {where(:visible => true)}
   scope :invisible, lambda {where(:visible => false)}

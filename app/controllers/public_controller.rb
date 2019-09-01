@@ -1,8 +1,8 @@
 class PublicController < ApplicationController
 
   before_action :shuffle_posts, :only => [:home]
-  helper_method :get_info_then_pop
-  helper_method :get_test
+  # helper_method :get_info
+  helper_method :estimate_past_time
 
   def home
     # @popular_posts = Post.visible.popular_first
@@ -10,8 +10,6 @@ class PublicController < ApplicationController
     shuffle_posts
     calc_rows
   end
-
-
 
   private
 
@@ -23,29 +21,29 @@ class PublicController < ApplicationController
   def calc_rows
     puts "#{@posts.length} Total Posts Found"
     @rows = @posts.length / 3
-    puts "#{@rows} Row Count"
     @remainder = @posts.length % 3
-    puts "#{@remainder} Remainder Count"
   end
 
-  # change it to a helper method
-  # not good for querying. Optimize this
-  def get_info_then_pop
-    post = @posts.last
-    @posts.pop
-    estimated_past_time = ((Time.new - post.created_at) / 1.day).round
-    # puts estimated_past_time
-    # Maybe reverse the decision making? this doesn't seem too good
-    if estimated_past_time < 2
-      # handle hours and minutes if this is 0
-      return "Posted #{estimated_past_time} day ago"
+  def estimate_past_time(post)
+    estimated_past_time = ((Time.new - post.created_at) / 1.minute).round
+    if estimated_past_time >= 1 && estimated_past_time <= 60
+      return "Posted #{estimated_past_time} minute ago" if estimated_past_time == 1
+      return "Posted #{estimated_past_time} minutes ago"
+    elsif estimated_past_time < 1
+      return "Posted less than a minute ago"
     end
-    return "Posted #{estimated_past_time} days ago"
-  end
 
-  def get_test
-    post = @posts.last
-    return post.location
+    estimated_past_time = ((Time.new - post.created_at) / 1.hour).round
+    if estimated_past_time >= 1 && estimated_past_time <= 24
+      return "Posted #{estimated_past_time} hour ago" if estimated_past_time == 1
+      return "Posted #{estimated_past_time} hours ago"
+    end
+
+    estimated_past_time = ((Time.new - post.created_at) / 1.day).round
+    if estimated_past_time >= 1
+      return "Posted #{estimated_past_time} day ago" if estimated_past_time == 1
+      return "Posted #{estimated_past_time} days ago"
+    end
   end
 
 end

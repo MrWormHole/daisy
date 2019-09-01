@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d174b75e-872b-4cdd-b67f-899030291be8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/public_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/public_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/public/home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/public/home.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -176,7 +171,7 @@
       <workItem from="1566771435094" duration="136000" />
       <workItem from="1566772212787" duration="32000" />
       <workItem from="1566842498027" duration="16000" />
-      <workItem from="1567152535626" duration="26187000" />
+      <workItem from="1567152535626" duration="36830000" />
     </task>
     <servers />
   </component>
