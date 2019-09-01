@@ -48,6 +48,4 @@ test:
 #
 production:
   <<: *default
-  database: sq36bjsql7y5iptr
-  username: vzpgfoarzkuhoiwv
-  password: unxsv5mo4ap4hdup
+  url: <%= ENV['JAWSDB_URL'] %>
