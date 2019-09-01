@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: VertigoFileHosting_production
-  username: VertigoFileHosting
+  database: sq36bjsql7y5iptr
+  username: vzpgfoarzkuhoiwv
   password: <%= ENV['VERTIGOFILEHOSTING_DATABASE_PASSWORD'] %>
