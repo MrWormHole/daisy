@@ -4,11 +4,11 @@ class Post < ApplicationRecord
 
   PHONE_NUMBER_REGEX = /^05\d{2}\d{3}\d{4}/m
   IMAGE_REGEX = /^image\/(jpeg|pjpeg|gif|png|bmp)$/
-  validates_presence_of :header, :message => "Yohooo"
-  validates_presence_of :content, :message => "Yohooo"
-  validates_presence_of :name, :message => "Yohooo"
-  validates_presence_of :location, :message => "Yohooo"
-  validates_presence_of :phone_number, :message => "Yohooo"
+  validates_presence_of :header
+  validates_presence_of :content
+  validates_presence_of :name
+  validates_presence_of :location
+  validates_presence_of :phone_number
 
   validate :is_image
   validate :image_limit

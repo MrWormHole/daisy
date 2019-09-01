@@ -1,11 +1,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
 </br>
 <!-- 14 posts 14 / 3 = 4 14 % 3 = 2 -->
-<!-- we need to shuffle post position -->
+
 <!-- we will need to adjust thumbnail as well as link_to the post -->
-<% 0..4.times do %>
+<% @rows.times do |i|%>
   <div class="row" style="grid-row-gap: 50px">
-    <% 0..3.times do %>
+    <% 0..3.times do |j| %>
       <div class="col-sm-4">
         <div class="card card-image" style="background-image: url(/assets/123.jpg);background-size:cover" >
           <p class="card-title text-center amy-crisp-gradient" style="font-size: 40px"> Card title</p>
@@ -13,7 +13,7 @@
           <div class="card-body lady-lips-gradient"  >
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted"><%= get_info_then_pop %></small></p>
           </div>
         </div>
       </div>
@@ -22,6 +22,23 @@
   </br>
 <% end %>
 
+<div class="row" style="grid-row-gap: 50px">
+  <% @remainder.times do %>
+      <div class="col-sm-4">
+        <div class="card card-image" style="background-image: url(/assets/123.jpg);background-size:cover" >
+          <p class="card-title text-center amy-crisp-gradient" style="font-size: 40px"> <%= get_test %></p>
+          <img src="/assets/daisy-160.png" class="card-img-top"  style="visibility: hidden " alt="...">
+          <div class="card-body lady-lips-gradient"  >
+
+            <p class="card-text">This card has supporting text.</p>
+            <p class="card-text"><small class="text-muted"><%= get_info_then_pop %></small></p>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
+
+</br>
 </br>
 </br>
 <!-- Footer -->

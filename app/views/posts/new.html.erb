@@ -1,7 +1,8 @@
 <%= render 'posts/shared/error', object:@post %>
 
 <div class="posts new">
-
+  <div class="col-md-4"> <h1> New Post</h1> </div>
+  </br>
   <%= form_for(@post,:url => posts_path,:method => 'post') do |f| %>
     <%= render(:partial => 'posts/shared/form',:locals => {:f => f}) %>
     <%= render(:partial => 'posts/shared/upload',:locals => {:f =>f}) %>
