@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d174b75e-872b-4cdd-b67f-899030291be8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/public_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/public_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/public/home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/public/home.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.rspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/posts_controller_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/public_controller_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/posts_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/public_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/post_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +179,7 @@
       <workItem from="1566771435094" duration="136000" />
       <workItem from="1566772212787" duration="32000" />
       <workItem from="1566842498027" duration="16000" />
-      <workItem from="1567152535626" duration="36830000" />
+      <workItem from="1567152535626" duration="37499000" />
     </task>
     <servers />
   </component>
