@@ -5,7 +5,7 @@
 <% @rows.times do |i|%>
   <div class="row" style="grid-row-gap: 50px">
     <% 3.times do |j| %>
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="card card-image" style="background-image: url(
             <% if @posts[3*i+j].images[0] %>
               <%= url_for(@posts[3*i+j].images[0]) %>

@@ -14,7 +14,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-color: lightgoldenrodyellow">
 
     <!--Main Navigation-->
     <header>
@@ -27,22 +27,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
             </li>
+            <!--
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Opinions</a>
             </li>
-
+            -->
             <% if user_signed_in? %>
               <li class="nav-item">
                 <a class="nav-link" href="/posts"> My Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/posts/new"> Add Post</a>
               </li>
             <% end %>
           </ul>
