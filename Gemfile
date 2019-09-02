@@ -33,7 +33,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.6'
 # Use ActiveStorage variant
 gem 'azure-storage', require: false
-
+# Use SendGrid
+gem 'sendgrid-ruby'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
